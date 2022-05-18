@@ -1,15 +1,11 @@
 ---
 date: '1'
-title: 'Halcyon Theme'
-cover: './halcyon.png'
-github: 'https://github.com/bchiang7/halcyon-site'
-external: 'https://halcyon-theme.netlify.com/'
+title: 'TUMTICS'
+cover: './tumtics.png'
+github: ''
+external: 'https://www.tumtics.com/en'
 tech:
-  - VS Code
-  - Sublime Text
-  - Atom
-  - iTerm2
-  - Hyper
+  - AWS
 ---
 
-A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=brittanychiang.halcyon-vscode), [Package Control](https://packagecontrol.io/packages/Halcyon%20Theme), [Atom Package Manager](https://atom.io/themes/halcyon-syntax), and [npm](https://www.npmjs.com/package/hyper-halcyon-theme).
+TUMTICS is a global [TUM](https://www.tum.de/en/) alumni networking platform founded in Olympiapark Munich in 2021. We hope to share more on-the-ground experiences of studying, working and living in Germany. By doing so, we expect to attract more outstanding students to join TUM, and to gradually expand the global network of alumni.
