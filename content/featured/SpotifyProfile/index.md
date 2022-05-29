@@ -1,15 +1,12 @@
 ---
 date: '2'
-title: 'Spotify Profile'
-cover: './demo.png'
-github: 'https://github.com/bchiang7/spotify-profile'
-external: 'https://spotify-profile.herokuapp.com/'
+title: 'Neimuc 內慕'
+cover: './neimuc.png'
+github: ''
+external: 'https://www.neimuc.com'
 tech:
-  - React
-  - Styled Components
-  - Express
-  - Spotify API
-  - Heroku
+  - AWS
+  - Wordpress
 ---
 
-A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.
+Neimuc is my blog about observations, thoughts, and career journeys that happened in Europe. As a Taiwanese from the Asian culture, I am always amazed by the cultural shocks from every corner. Of course, Western mindset is another part that inspired me all the time.

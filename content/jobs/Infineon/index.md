@@ -1,7 +1,7 @@
 ---
 date: '2022-02-28'
-title: 'Business Development Manager, APAC'
-company: 'Infineon Technologies'
+title: 'APAC Application Management Manager'
+company: 'Infineon'
 location: 'Munich, Germany'
 range: 'August 2021- February 2022'
 url: 'https://www.infineon.com/'
