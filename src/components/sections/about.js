@@ -135,16 +135,24 @@ const About = () => {
       <div className="inner">
         <StyledText>
           <div>
+            <p>Hey there, I'm Jeff Fan!</p>
+
             <p>
-              Hey there, I'm Jeff Fan! I advocate cloud computing and keep building ideas on the
-              Internet. Currently, I am a SaaS solution engineer based in Munich. Before that, I was
-              a DevOps engineer focused on AWS and Kubernetes. IMHO, it should be easy to understand
-              technology with a simple analogy. Feel free to reach out to me if you would like to
-              understand any cloud computing concepts like you are only five years old. We are only
-              one email away :)
+              I advocate cloud computing and keep building ideas on the Internet. Currently, I am a
+              SaaS solution engineer based in Munich. Before that, I was a DevOps engineer focused
+              on AWS and Kubernetes.
             </p>
 
-            <p>Here are a few technologies I’ve been working with recently:</p>
+            <p>
+              We live in a world where technologies surround our day. I believe tech should not look
+              cold but comes from human nature. And a proper analogy could help us to understand
+              tech's nature. Feel free to reach out to me if you would like to understand any cloud
+              computing concepts like you are only five years old.
+            </p>
+
+            <p>We are only one email away :)</p>
+
+            <p>Here are some topics I'm interested in recently:</p>
           </div>
 
           <ul className="skills-list">
@@ -156,7 +164,7 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/jeff-fan-profile.png"
+              src="../../images/profile.png"
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
