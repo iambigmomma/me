@@ -6,9 +6,10 @@ import { srConfig } from '@config';
 import { KEY_CODES } from '@utils';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
+// import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 const StyledJobsSection = styled.section`
-  max-width: 700px;
+  max-width: 1000px;
 
   .inner {
     display: flex;
@@ -303,6 +304,12 @@ const Jobs = () => {
             })}
         </StyledTabPanels>
       </div>
+      {/* <h2> Keynote Speechees</h2> */}
+      {/* <div className="project-image"> */}
+      {/* <a href={external ? external : github ? github : '#'}> */}
+      {/* <GatsbyImage image={image} alt={title} className="img" /> */}
+      {/* </a> */}
+      {/* </div> */}
     </StyledJobsSection>
   );
 };

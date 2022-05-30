@@ -22,17 +22,17 @@ module.exports = {
       url: '/#about',
     },
     {
-      name: 'Experience',
+      name: 'Work',
       url: '/#jobs',
     },
     {
-      name: 'Work',
+      name: 'Project',
       url: '/#projects',
     },
-    {
-      name: 'Talk',
-      url: '/#talks',
-    },
+    // {
+    // name: 'Talk',
+    // url: '/#talks',
+    // },
     {
       name: 'Contact',
       url: '/#contact',
