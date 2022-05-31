@@ -5,7 +5,7 @@ module.exports = {
     title: 'Jeff Fan',
     description:
       'A Munich based solution engineer with passion in cloud computing technology. Professional in cloud computing industry with multinational experiences in software development and solution engineering.',
-    siteUrl: 'https://jefan.me', // No trailing slash allowed!
+    siteUrl: 'https://jefan.netlify.app', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
   },
   plugins: [

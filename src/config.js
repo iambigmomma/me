@@ -29,10 +29,6 @@ module.exports = {
       name: 'Project',
       url: '/#projects',
     },
-    // {
-    // name: 'Talk',
-    // url: '/#talks',
-    // },
     {
       name: 'Contact',
       url: '/#contact',
@@ -40,7 +36,7 @@ module.exports = {
   ],
 
   colors: {
-    green: '#64ffda',
+    green: '#401289',
     navy: '#0a192f',
     darkNavy: '#020c1b',
   },

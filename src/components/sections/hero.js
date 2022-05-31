@@ -68,7 +68,7 @@ const Hero = () => {
         computer science era. Currently, I’m focused on helping customers to build products with
         digital confidence at{' '}
         <a href="https://saucelabs.com/" target="_blank" rel="noreferrer">
-          Sauce Labs.
+          Sauce Labs
         </a>
         .
       </p>

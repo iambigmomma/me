@@ -112,6 +112,13 @@ const StyledPic = styled.div`
       z-index: -1;
     }
   }
+  .img {
+    position: relative;
+    border-radius: var(--border-radius);
+    mix-blend-mode: multiply;
+    filter: grayscale(0%) contrast(1);
+    transition: var(--transition);
+  }
 `;
 
 const About = () => {
@@ -144,13 +151,12 @@ const About = () => {
             </p>
 
             <p>
-              We live in a world where technologies surround our day. I believe tech should not look
-              cold but comes from human nature. And a proper analogy could help us to understand
-              tech's nature. Feel free to reach out to me if you would like to understand any cloud
-              computing concepts like you are only five years old.
+              I believe tech should not look cold but comes from human nature. And a proper analogy
+              could help us to understand tech's nature. Feel free to reach out to me if you would
+              like to understand any cloud computing concepts like you are only five years old.
             </p>
 
-            <p>We are only one email away :)</p>
+            <p>Feel free to drop me a message!</p>
 
             <p>Here are some topics I'm interested in recently:</p>
           </div>
@@ -161,16 +167,16 @@ const About = () => {
         </StyledText>
 
         <StyledPic>
-          <div className="wrapper">
-            <StaticImage
-              className="img"
-              src="../../images/profile.png"
-              width={500}
-              quality={95}
-              formats={['AUTO', 'WEBP', 'AVIF']}
-              alt="Headshot"
-            />
-          </div>
+          {/* <div className="wrapper"> */}
+          <StaticImage
+            className="img"
+            src="../../images/profile.png"
+            width={500}
+            quality={95}
+            formats={['AUTO', 'WEBP', 'AVIF']}
+            alt="Headshot"
+          />
+          {/* </div> */}
         </StyledPic>
       </div>
     </StyledAboutSection>
