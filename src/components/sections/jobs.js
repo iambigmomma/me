@@ -9,8 +9,6 @@ import { usePrefersReducedMotion } from '@hooks';
 // import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 const StyledJobsSection = styled.section`
-  max-width: 1000px;
-
   .inner {
     display: flex;
 

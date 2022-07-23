@@ -6,8 +6,6 @@ import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
 
 const StyledAboutSection = styled.section`
-  max-width: 1000px;
-
   .inner {
     display: grid;
     grid-template-columns: 3fr 2fr;
@@ -132,7 +130,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = ['Kubernetes', 'AWS', 'Selenium', 'Python', 'Automation', 'IaC'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>

@@ -3,7 +3,7 @@ date: '2022-05-18'
 title: 'Solution Engineer'
 company: 'Sauce Labs'
 location: 'Munich, Germany'
-range: 'April 2018 - Now'
+range: 'April 2022 - Now'
 url: 'https://saucelabs.com/'
 ---
 

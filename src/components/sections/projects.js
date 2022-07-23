@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link, useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { srConfig } from '@config';
 import sr from '@utils/sr';
-import { Icon } from '@components/icons';
 import { usePrefersReducedMotion } from '@hooks';
 
 const StyledProjectsSection = styled.section`
@@ -27,14 +27,11 @@ const StyledProjectsSection = styled.section`
   .projects-grid {
     ${({ theme }) => theme.mixins.resetList};
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     grid-gap: 15px;
     position: relative;
     margin-top: 50px;
-
-    @media (max-width: 1080px) {
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    }
   }
 
   .more-button {
@@ -168,19 +165,20 @@ const StyledProject = styled.li`
 const Projects = () => {
   const data = useStaticQuery(graphql`
     query {
-      projects: allMarkdownRemark(
-        filter: {
-          fileAbsolutePath: { regex: "/content/projects/" }
-          frontmatter: { showInProjects: { ne: false } }
-        }
-        sort: { fields: [frontmatter___date], order: DESC }
+      talks: allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/talks/" } }
+        sort: { fields: [frontmatter___date], order: ASC }
       ) {
         edges {
           node {
             frontmatter {
               title
-              tech
-              github
+              cover {
+                childImageSharp {
+                  gatsbyImageData(width: 500, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+                }
+              }
+              location
               external
             }
             html
@@ -206,23 +204,24 @@ const Projects = () => {
     revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 100)));
   }, []);
 
-  const GRID_LIMIT = 6;
-  const projects = data.projects.edges.filter(({ node }) => node);
+  const GRID_LIMIT = 3;
+  const projects = data.talks.edges.filter(({ node }) => node);
   const firstSix = projects.slice(0, GRID_LIMIT);
   const projectsToShow = showMore ? projects : firstSix;
 
   const projectInner = node => {
     const { frontmatter, html } = node;
-    const { github, external, title, tech } = frontmatter;
+    const { external, title, cover, location } = frontmatter;
+    const image = getImage(cover);
 
     return (
       <div className="project-inner">
         <header>
           <div className="project-top">
-            <div className="folder">
+            {/* <div className="folder">
               <Icon name="Folder" />
-            </div>
-            <div className="project-links">
+            </div> */}
+            {/* <div className="project-links">
               {github && (
                 <a href={github} aria-label="GitHub Link" target="_blank" rel="noreferrer">
                   <Icon name="GitHub" />
@@ -238,26 +237,30 @@ const Projects = () => {
                   <Icon name="External" />
                 </a>
               )}
-            </div>
+            </div> */}
           </div>
 
-          <h3 className="project-title">
+          <h2 className="project-title">
             <a href={external} target="_blank" rel="noreferrer">
               {title}
             </a>
-          </h3>
+          </h2>
+          <h3 className="project-title">{location}</h3>
 
           <div className="project-description" dangerouslySetInnerHTML={{ __html: html }} />
+          <div className="project-image">
+            <GatsbyImage image={image} alt={title} className="img" />
+          </div>
         </header>
 
         <footer>
-          {tech && (
+          {/* {tech && (
             <ul className="project-tech-list">
               {tech.map((tech, i) => (
                 <li key={i}>{tech}</li>
               ))}
             </ul>
-          )}
+          )} */}
         </footer>
       </div>
     );
@@ -265,11 +268,14 @@ const Projects = () => {
 
   return (
     <StyledProjectsSection>
-      <h2 ref={revealTitle}>Other Noteworthy Projects</h2>
+      {/* <h2 ref={revealTitle}>Keynotes Speech</h2> */}
+      <h2 className="numbered-heading" ref={revealTitle}>
+        Keynote Speech I’ve Shared
+      </h2>
 
-      <Link className="inline-link archive-link" to="/archive" ref={revealArchiveLink}>
+      {/* <Link className="inline-link archive-link" to="/archive" ref={revealArchiveLink}>
         view the archive
-      </Link>
+      </Link> */}
 
       <ul className="projects-grid">
         {prefersReducedMotion ? (
