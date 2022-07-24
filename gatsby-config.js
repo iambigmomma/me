@@ -19,8 +19,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'JeffFan',
-        short_name: 'JeffFan',
+        name: 'Jeff Fan',
+        short_name: 'Jeff Fan',
         start_url: '/',
         background_color: config.colors.darkNavy,
         theme_color: config.colors.navy,
