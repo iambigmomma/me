@@ -130,7 +130,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['Kubernetes', 'AWS', 'Selenium', 'Python', 'Automation', 'IaC'];
+  const skills = ['Kubernetes', 'DigitalOcean', 'AWS', 'Python', 'Automation', 'IaC', 'chatGPT'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -144,7 +144,7 @@ const About = () => {
             <p>
               I advocate cloud computing and keep building ideas on the Internet. Currently, I am a
               SaaS solution engineer based in Munich. Before that, I was a DevOps engineer focused
-              on AWS and Kubernetes.
+              on DigitalOcean and Kubernetes.
             </p>
 
             <p>

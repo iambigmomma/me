@@ -65,10 +65,10 @@ const Hero = () => {
     <>
       <p>
         I’m a solution engineer specializing in advocating cloud computing concept in this great
-        computer science era. Currently, I’m focused on helping customers to build products with
-        digital confidence at{' '}
-        <a href="https://saucelabs.com/" target="_blank" rel="noreferrer">
-          Sauce Labs
+        computer science era. Currently, I’m focused on helping customers to build cloud native
+        products at{' '}
+        <a href="https://www.digitalocean.com/" target="_blank" rel="noreferrer">
+          DigitalOcean
         </a>
         .
       </p>
